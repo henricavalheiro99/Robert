@@ -1,0 +1,6 @@
+/* produtos------------------------------------------------------------------------------------------- */
+@media(max-width: 450px){
+    #Produtos .requeijao, .leite, .minas, .margarina{
+        display: block;
+    }
+}
