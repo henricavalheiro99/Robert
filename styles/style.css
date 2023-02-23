@@ -1,8 +1,9 @@
 *{
     margin: 0px;
     padding: 0px;
+    font-family: 'Inter', sans-serif;
+    transition: 0.5s;
 }
-
 /* Home---------------------------------------------------------------------------------------------------- */
 .header,
 .header2{
@@ -13,14 +14,187 @@
     justify-content: space-between;
     align-items: center;
 }
+.divnav{
+    display: flex;
+    align-items: center;
+}
+
 .header a{
     padding: 10px;
+    text-decoration: none;
+    color: white;
+    
 }
+
+
+.header a:hover{
+    background-color: white;
+    margin: 5px;
+    padding: 5px;
+    color: black;
+    border: none;
+    border-radius: 30px;
+}
+.header a{
+    margin-left: 5px;
+}
+.form button {
+  border: none;
+  background: none;
+  color: #8b8ba7;
+}
+
+.form {
+  --timing: 0.3s;
+  --width-of-input: 200px;
+  --height-of-input: 40px;
+  --border-height: 2px;
+  --input-bg: #fff;
+  --border-color: #2f2ee9;
+  --border-radius: 30px;
+  --after-border-radius: 1px;
+  position: relative;
+  width: var(--width-of-input);
+  height: var(--height-of-input);
+  display: flex;
+  align-items: center;
+  padding-inline: 0.8em;
+  border-radius: var(--border-radius);
+  transition: border-radius 0.5s ease;
+  background: var(--input-bg,#fff);
+  margin-right: 10px;
+}
+
+.busca {
+  font-size: 0.9rem;
+  background-color: transparent;
+  width: 100%;
+  height: 100%;
+  padding-inline: 0.5em;
+  padding-block: 0.7em;
+  border: none;
+}
+
+.form:before {
+  content: "";
+  position: absolute;
+  background: var(--border-color);
+  transform: scaleX(0);
+  transform-origin: center;
+  width: 100%;
+  height: var(--border-height);
+  left: 0;
+  bottom: 0;
+  border-radius: 1px;
+  transition: transform var(--timing) ease;
+}
+
+.form:focus-within {
+  border-radius: var(--after-border-radius);
+}
+
+input:focus {
+  outline: none;
+}
+
+.form:focus-within:before {
+  transform: scale(1);
+}
+
+.reset {
+  border: none;
+  background: none;
+  opacity: 0;
+  visibility: hidden;
+}
+
+input:not(:placeholder-shown) ~ .reset {
+  opacity: 1;
+  visibility: visible;
+}
+
+
 .logo,
 .logo2{
     width: 60px;
     height: 60px;
 }
+
+/* HOME-BANNER------------------------------------------------------- */
+
+.banner{
+    background-image: url(../img/IMAGEM\ BACK.png);
+    width: 100%;
+    height: 500px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.btn {
+    --clr-font-main: hsla(0 0% 20% / 100);
+    --btn-bg-1: hsla(194 100% 69% / 1);
+    --btn-bg-2: hsla(217 100% 56% / 1);
+    --btn-bg-color: hsla(360 100% 100% / 1);
+    --radii: 0.5em;
+    cursor: pointer;
+    padding: 0.9em 1.4em;
+    min-width: 120px;
+    min-height: 44px;
+    font-size: var(--size, 1rem);
+    font-family: "Segoe UI", system-ui, sans-serif;
+    font-weight: 500;
+    transition: 0.8s;
+    background-size: 280% auto;
+    background-image: linear-gradient(325deg, var(--btn-bg-2) 0%, var(--btn-bg-1) 55%, var(--btn-bg-2) 90%);
+    border: none;
+    border-radius: 100px;
+    color: var(--btn-bg-color);
+    box-shadow: 0px 0px 20px rgba(71, 184, 255, 0.5), 0px 5px 5px -1px rgba(58, 125, 233, 0.25), inset 4px 4px 8px rgba(175, 230, 255, 0.5), inset -4px -4px 8px rgba(19, 95, 216, 0.35);
+  }
+  
+  .btn:hover {
+    background-position: right top;
+  }
+  
+  .btn:is(:focus, :focus-within,:active) {
+    outline: none;
+    box-shadow: 0 0 0 3px var(--btn-bg-color), 0 0 0 6px var(--btn-bg-2);
+  }
+  
+  @media (prefers-reduced-motion: reduce) {
+    .btn {
+      transition: linear;
+    }
+  }
+  .btn{
+    margin-left: 9vw;
+    margin-top: 15px;
+  }
+
+.tituloh span{
+    display: block;
+    padding: 3px;
+    color: #407CD6;
+}
+.tituloh{
+    padding-top:10px;
+}
+
+.s1{
+    margin-left: 150px;
+    font-size: 48.5px;
+}
+
+.s2{
+    font-size: 54.9px;
+    margin-left: 60px;
+}
+
+.s3{
+    font-size: 90.2px;
+    margin-left: 110px;
+}
+
+    
 
 /* Carrinho------------------------------------------------------------------------------------------------ */
 
@@ -32,6 +206,7 @@
 .logo2 {
     padding-left: 20px;
 }
+
 
 /*----------------------------------------------REGISTRO------------------------------------------------*/
 
@@ -178,3 +353,55 @@ main #registro #registro-registrar .container{
     transition-delay: 0.15s;
   }
   
+
+
+/* Produtos------------------------------------------------------------------------------------------------------ */
+
+#Produtos .grid{
+    display: grid;
+    grid-template-rows: repeat(4,1fr);
+    height: 100vh;
+    width: 100%;
+}
+
+
+#Produtos .requeijao, .leite, .minas, .margarina{
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+}
+
+#Produtos main img{
+    width: 200px;
+}
+
+#Produtos .requeijao-texto, .leite-texto, .minas-texto, .margarina-texto, .requeijao-img, .leite-img, .minas-img, .margarina-img {
+    text-align: center;
+    display: flex;
+    flex-direction: column;    
+    align-items: center;
+    justify-content: center;
+
+}
+
+#Produtos .requeijao-img a, .leite-img a, .minas-img a, .margarina-img a{
+    margin: 30px;
+    text-decoration: none;
+    color: white;
+    background-color: #407CD6;
+    border-radius: 20px;
+    padding: 10px;
+    font-weight: bolder;
+}
+
+.requeijao-texto h3, .leite-texto h3, .minas-texto h3, .margarina-texto h3{
+    color: #407CD6;
+    font-weight: bolder;
+}
+
+#Produtos hr{
+    border: 3px dashed #407CD6;
+}
+
+
+
+
