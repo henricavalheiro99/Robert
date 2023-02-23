@@ -129,7 +129,7 @@ input:not(:placeholder-shown) ~ .reset {
     background-repeat: no-repeat;
     background-size: cover;
 }
-.btn {
+.btn, #Produtos .requeijao-img a, .leite-img a, .minas-img a, .margarina-img a{
     --clr-font-main: hsla(0 0% 20% / 100);
     --btn-bg-1: hsla(194 100% 69% / 1);
     --btn-bg-2: hsla(217 100% 56% / 1);
@@ -151,11 +151,11 @@ input:not(:placeholder-shown) ~ .reset {
     box-shadow: 0px 0px 20px rgba(71, 184, 255, 0.5), 0px 5px 5px -1px rgba(58, 125, 233, 0.25), inset 4px 4px 8px rgba(175, 230, 255, 0.5), inset -4px -4px 8px rgba(19, 95, 216, 0.35);
   }
   
-  .btn:hover {
+  .btn:hover, #Produtos .requeijao-img a:hover, .leite-img a:hover, .minas-img a:hover, .margarina-img a:hover {
     background-position: right top;
   }
   
-  .btn:is(:focus, :focus-within,:active) {
+  .btn:is(:focus, :focus-within,:active), #Produtos .requeijao-img a:is(:focus, :focus-within,:active), .leite-img a:is(:focus, :focus-within,:active), .minas-img a:is(:focus, :focus-within,:active), .margarina-img a:is(:focus, :focus-within,:active) {
     outline: none;
     box-shadow: 0 0 0 3px var(--btn-bg-color), 0 0 0 6px var(--btn-bg-2);
   }
@@ -213,7 +213,6 @@ input:not(:placeholder-shown) ~ .reset {
 .logo2 {
     padding-left: 20px;
 }
-
 
 
 main {
@@ -500,7 +499,6 @@ main #registro #registro-registrar .container{
   
 
 
-
 /* Produtos------------------------------------------------------------------------------------------------------ */
 
 #Produtos .grid{
@@ -535,7 +533,6 @@ main #registro #registro-registrar .container{
     color: white;
     background-color: #407CD6;
     border-radius: 20px;
-    padding: 10px;
     font-weight: bolder;
 }
 
@@ -548,3 +545,10 @@ main #registro #registro-registrar .container{
     border: 3px dashed #407CD6;
 }
 
+
+
+
+
+.requeijao-texto p, .leite-texto p, .minas-texto p, .margarina-texto p{
+    margin: 20px;
+}
