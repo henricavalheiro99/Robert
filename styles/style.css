@@ -244,7 +244,7 @@ input:not(:placeholder-shown) ~ .reset {
 }
 
 
-main {
+#background {
     background: rgb(255,255,255);
     background: linear-gradient(180deg, rgba(255,255,255,1) 66%, rgba(64,124,214,1) 100%);
     min-height: 100vh;
