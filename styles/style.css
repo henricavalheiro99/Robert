@@ -159,7 +159,6 @@ table {
 .cupons-botao {
     display: inline;
     flex-direction: row;
-    justify-content: end;
     margin-top: 13px;
     background-color: #407CD6;
     color: white;
