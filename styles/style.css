@@ -214,14 +214,10 @@ input:not(:placeholder-shown) ~ .reset {
     padding-left: 20px;
 }
 
-<<<<<<< HEAD
+
 main {
     background: rgb(255,255,255);
     background: linear-gradient(180deg, rgba(255,255,255,1) 66%, rgba(64,124,214,1) 100%);
-=======
-
-main {
->>>>>>> 80fd7976ffa02061509028f93b1996b63733174e
     min-height: 100vh;
     width: 100%;
 }
@@ -358,7 +354,7 @@ table {
     
 }
 
-<<<<<<< HEAD
+
 .pagamento {
     border: 5px solid #407CD6;
     border-radius: 30px;
@@ -391,7 +387,7 @@ table {
     float: right;
 }
 
-=======
+
 
 
 /*----------------------------------------------REGISTRO------------------------------------------------*/
@@ -473,7 +469,6 @@ main #registro #registro-registrar .container{
     margin-top: 10px;
 } 
 
->>>>>>> 80fd7976ffa02061509028f93b1996b63733174e
 .check {
     cursor: pointer;
     position: relative;
@@ -527,33 +522,30 @@ main #registro #registro-registrar .container{
     stroke: #4285f4;
   }
   
-<<<<<<< HEAD
+
   .cbx:checked + .check svg {
     stroke: #4285f4;
   }
   
   .cbx:checked + .check svg path {
-=======
-  #cbx:checked + .check svg {
+
     stroke: #4285f4;
   }
   
   #cbx:checked + .check svg path {
->>>>>>> 80fd7976ffa02061509028f93b1996b63733174e
+
     stroke-dashoffset: 60;
     transition: all 0.3s linear;
   }
   
-<<<<<<< HEAD
+
   .cbx:checked + .check svg polyline {
-=======
-  #cbx:checked + .check svg polyline {
->>>>>>> 80fd7976ffa02061509028f93b1996b63733174e
+
     stroke-dashoffset: 42;
     transition: all 0.2s linear;
     transition-delay: 0.15s;
   }
-<<<<<<< HEAD
+
 
   .grid-itens {
     display: grid;
@@ -585,9 +577,7 @@ main #registro #registro-registrar .container{
 
 
 
-=======
-  
->>>>>>> 80fd7976ffa02061509028f93b1996b63733174e
+
 
 
 /* Produtos------------------------------------------------------------------------------------------------------ */
@@ -636,8 +626,7 @@ main #registro #registro-registrar .container{
     border: 3px dashed #407CD6;
 }
 
-<<<<<<< HEAD
-=======
+
 
 
 
@@ -645,4 +634,4 @@ main #registro #registro-registrar .container{
 .requeijao-texto p, .leite-texto p, .minas-texto p, .margarina-texto p{
     margin: 20px;
 }
->>>>>>> 80fd7976ffa02061509028f93b1996b63733174e
+
