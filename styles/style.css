@@ -212,10 +212,7 @@ input:not(:placeholder-shown) ~ .reset {
 .logo2 {
     padding-left: 20px;
 }
-<<<<<<< HEAD
-=======
 
->>>>>>> 01e53ee3b0e37d218707d91aac1158b2f54fbc17
 main {
     min-height: 100vh;
     width: 100%;
@@ -349,8 +346,6 @@ table {
     font-size: 15px;
 }
 
-<<<<<<< HEAD
-=======
 
 /*----------------------------------------------REGISTRO------------------------------------------------*/
 
@@ -500,7 +495,6 @@ main #registro #registro-registrar .container{
   }
   
 
->>>>>>> 01e53ee3b0e37d218707d91aac1158b2f54fbc17
 
 /* Produtos------------------------------------------------------------------------------------------------------ */
 
@@ -550,15 +544,11 @@ main #registro #registro-registrar .container{
 #Produtos hr{
     border: 3px dashed #407CD6;
 }
-<<<<<<< HEAD
-<<<<<<< HEAD
 
 
-=======
->>>>>>> 01e53ee3b0e37d218707d91aac1158b2f54fbc17
-=======
+
+
 
 .requeijao-texto p, .leite-texto p, .minas-texto p, .margarina-texto p{
     margin: 20px;
 }
->>>>>>> cb60c602fef6d8bab643afeb9c3f8cfefacd3af4
