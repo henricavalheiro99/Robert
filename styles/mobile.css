@@ -4,3 +4,23 @@
         display: block;
     }
 }
+
+/* carrinho------------------------------------------------------------------------------------------- */
+@media(max-width: 700px){
+    #cupons-pagamento {
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: auto;
+    }
+
+}
+
+@media(max-width: 700px){
+    .pagamento,
+    .cupons{margin: 0px;}
+
+    #tabela {
+        overflow: auto;
+        
+    }
+}
