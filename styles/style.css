@@ -32,3 +32,149 @@
 .logo2 {
     padding-left: 20px;
 }
+
+/*----------------------------------------------REGISTRO------------------------------------------------*/
+
+
+
+main#login-registro{
+    background: rgb(255,255,255);
+    background: linear-gradient(180deg, rgba(255,255,255,1) 50%, rgba(64,124,214,1) 92%);
+    height: 100vh;
+}
+
+main #registre-se h1{
+    text-align: center;
+    color: #407CD6;
+}
+
+main #registro-registrar{
+    text-align: center;
+    padding: 20px;
+}
+
+
+main #registro{
+    justify-content: center;
+    align-items: center;
+}
+
+
+main#login-registro #caixa {
+    margin: 77px;
+    display: block;
+    padding: 10px;
+    border: 20px;
+    border: 6px solid #407CD6;
+    border-radius: 40px;
+    width: 200px;
+    margin-bottom: 10px;
+    height: 57vh;
+    background-color: white;
+}
+
+main #registro{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+main #registro #registro-registrar  form input{
+    border: 1px solid black;
+    border-radius: 20px;
+}
+
+main .form-formulario-nome,.form-formulario-email,
+.form-formulario-usuario,.form-formulario-senha,.form-formulario-confirmar{
+    color: #407CD6;
+    text-align: left;
+    margin-top: 8px;
+}
+
+main #registro #registro-registrar form button{
+    padding: 9px;
+    border: none;
+    background-color: #407CD6;
+    color: white;
+    border-radius: 10px;
+    width: 100px;
+    cursor: pointer;
+    text-align: center;
+    display: block;
+    margin: auto;
+    margin-top: 15px;
+}
+
+main #registro #registro-registrar .container{
+    margin-top: 10px;
+} 
+
+.check {
+    cursor: pointer;
+    position: relative;
+    margin: auto;
+    width: 18px;
+    height: 18px;
+    -webkit-tap-highlight-color: transparent;
+    transform: translate3d(0, 0, 0);
+  }
+  
+  .check:before {
+    content: "";
+    position: absolute;
+    top: -15px;
+    left: -15px;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: rgba(34,50,84,0.03);
+    opacity: 0;
+    transition: opacity 0.2s ease;
+  }
+  
+  .check svg {
+    position: relative;
+    z-index: 1;
+    fill: none;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke: #c8ccd4;
+    stroke-width: 1.5;
+    transform: translate3d(0, 0, 0);
+    transition: all 0.2s ease;
+  }
+  
+  .check svg path {
+    stroke-dasharray: 60;
+    stroke-dashoffset: 0;
+  }
+  
+  .check svg polyline {
+    stroke-dasharray: 22;
+    stroke-dashoffset: 66;
+  }
+  
+  .check:hover:before {
+    opacity: 1;
+  }
+  
+  .check:hover svg {
+    stroke: #4285f4;
+  }
+  
+  #cbx:checked + .check svg {
+    stroke: #4285f4;
+  }
+  
+  #cbx:checked + .check svg path {
+    stroke-dashoffset: 60;
+    transition: all 0.3s linear;
+  }
+  
+  #cbx:checked + .check svg polyline {
+    stroke-dashoffset: 42;
+    transition: all 0.2s linear;
+    transition-delay: 0.15s;
+  }
+  
