@@ -193,7 +193,13 @@ input:not(:placeholder-shown) ~ .reset {
     font-size: 90.2px;
     margin-left: 110px;
 }
+/* HOME-SOBRE---------------------------------------------------------------------------------------------- */
 
+.sobre{
+    background-image: url(../img/laele\ fundo.png);
+    width: 100vh;
+    height: 427px;
+}
     
 
 /* Carrinho------------------------------------------------------------------------------------------------ */
@@ -206,8 +212,6 @@ input:not(:placeholder-shown) ~ .reset {
 .logo2 {
     padding-left: 20px;
 }
-
-<<<<<<< HEAD
 main {
     background: rgb(255,255,255);
     background: linear-gradient(180deg, rgba(255,255,255,1) 66%, rgba(64,124,214,1) 100%);
@@ -342,7 +346,7 @@ table {
     padding: 5px;
     font-size: 15px;
 }
-=======
+
 
 /* Produtos------------------------------------------------------------------------------------------------------ */
 
@@ -391,4 +395,4 @@ table {
     border: 3px dashed #407CD6;
 }
 
->>>>>>> 3b162b8ec649092478c4cd7af838dff848605c61
+
