@@ -5,7 +5,8 @@
     transition: 0.5s;
 }
 /* Home---------------------------------------------------------------------------------------------------- */
-.header{
+.header,
+.header2{
     background-color: #407CD6;
     width: 100%;
     height: 10vh;
@@ -24,6 +25,7 @@
     color: white;
     
 }
+<<<<<<< HEAD
 .header a:hover{
     background-color: white;
     margin: 5px;
@@ -110,7 +112,9 @@ input:not(:placeholder-shown) ~ .reset {
   visibility: visible;
 }
 
-.logo{
+
+.logo,
+.logo2{
     width: 60px;
     height: 60px;
 }
@@ -190,3 +194,15 @@ input:not(:placeholder-shown) ~ .reset {
 }
 
     
+
+/* Carrinho------------------------------------------------------------------------------------------------ */
+
+.header2 a {
+    padding-right: 20px;
+    color: white;
+}
+
+.logo2 {
+    padding-left: 20px;
+}
+>>>>>>> 47b18d92b7dc391ac3046d7b451e109143e2b041
