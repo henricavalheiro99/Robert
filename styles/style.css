@@ -129,7 +129,7 @@ input:not(:placeholder-shown) ~ .reset {
     background-repeat: no-repeat;
     background-size: cover;
 }
-.btn {
+.btn, #Produtos .requeijao-img a, .leite-img a, .minas-img a, .margarina-img a{
     --clr-font-main: hsla(0 0% 20% / 100);
     --btn-bg-1: hsla(194 100% 69% / 1);
     --btn-bg-2: hsla(217 100% 56% / 1);
@@ -151,11 +151,11 @@ input:not(:placeholder-shown) ~ .reset {
     box-shadow: 0px 0px 20px rgba(71, 184, 255, 0.5), 0px 5px 5px -1px rgba(58, 125, 233, 0.25), inset 4px 4px 8px rgba(175, 230, 255, 0.5), inset -4px -4px 8px rgba(19, 95, 216, 0.35);
   }
   
-  .btn:hover {
+  .btn:hover, #Produtos .requeijao-img a:hover, .leite-img a:hover, .minas-img a:hover, .margarina-img a:hover {
     background-position: right top;
   }
   
-  .btn:is(:focus, :focus-within,:active) {
+  .btn:is(:focus, :focus-within,:active), #Produtos .requeijao-img a:is(:focus, :focus-within,:active), .leite-img a:is(:focus, :focus-within,:active), .minas-img a:is(:focus, :focus-within,:active), .margarina-img a:is(:focus, :focus-within,:active) {
     outline: none;
     box-shadow: 0 0 0 3px var(--btn-bg-color), 0 0 0 6px var(--btn-bg-2);
   }
@@ -193,7 +193,14 @@ input:not(:placeholder-shown) ~ .reset {
     font-size: 90.2px;
     margin-left: 110px;
 }
+/* HOME-SOBRE---------------------------------------------------------------------------------------------- */
 
+.sobre{
+    background-image: url(../img/laele\ fundo.png);
+    width: 100%;
+    height: 427px;
+    background-size: 100%;
+}
     
 
 /* Carrinho------------------------------------------------------------------------------------------------ */
@@ -207,9 +214,14 @@ input:not(:placeholder-shown) ~ .reset {
     padding-left: 20px;
 }
 
+<<<<<<< HEAD
 main {
     background: rgb(255,255,255);
     background: linear-gradient(180deg, rgba(255,255,255,1) 66%, rgba(64,124,214,1) 100%);
+=======
+
+main {
+>>>>>>> 80fd7976ffa02061509028f93b1996b63733174e
     min-height: 100vh;
     width: 100%;
 }
@@ -346,6 +358,7 @@ table {
     
 }
 
+<<<<<<< HEAD
 .pagamento {
     border: 5px solid #407CD6;
     border-radius: 30px;
@@ -378,6 +391,89 @@ table {
     float: right;
 }
 
+=======
+
+
+/*----------------------------------------------REGISTRO------------------------------------------------*/
+
+
+
+main #registro{
+    background: rgb(255,255,255);
+    background: linear-gradient(180deg, rgba(255,255,255,1) 50%, rgba(64,124,214,1) 92%);
+    height: 100vh;
+    background: repeat(no-repeat);
+}
+
+main #registre-se h1{
+    text-align: center;
+    color: #407CD6;
+    font-size: 22px;
+}
+
+main #registro-registrar{
+    text-align: center;
+    padding: 20px;
+}
+
+
+main #registro{
+    justify-content: center;
+    align-items: center;
+}
+
+
+main#login-registro #caixa {
+    margin: 77px;
+    display: block;
+    padding: 10px;
+    border: 20px;
+    border: 6px solid #407CD6;
+    border-radius: 40px;
+    width: 200px;
+    margin-bottom: 10px;
+    min-height: 57vh;
+    background-color: white;
+}
+
+main #registro{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+main #registro #registro-registrar  form input{
+    border: 1px solid black;
+    border-radius: 20px;
+}
+
+main .form-formulario-nome,.form-formulario-email,
+.form-formulario-usuario,.form-formulario-senha,.form-formulario-confirmar{
+    color: #407CD6;
+    text-align: left;
+    margin-top: 8px;
+}
+
+main #registro #registro-registrar form button{
+    padding: 9px;
+    border: none;
+    background-color: #407CD6;
+    color: white;
+    border-radius: 10px;
+    width: 100px;
+    cursor: pointer;
+    text-align: center;
+    display: block;
+    margin: auto;
+    margin-top: 15px;
+}
+
+main #registro #registro-registrar .container{
+    margin-top: 10px;
+} 
+
+>>>>>>> 80fd7976ffa02061509028f93b1996b63733174e
 .check {
     cursor: pointer;
     position: relative;
@@ -431,20 +527,33 @@ table {
     stroke: #4285f4;
   }
   
+<<<<<<< HEAD
   .cbx:checked + .check svg {
     stroke: #4285f4;
   }
   
   .cbx:checked + .check svg path {
+=======
+  #cbx:checked + .check svg {
+    stroke: #4285f4;
+  }
+  
+  #cbx:checked + .check svg path {
+>>>>>>> 80fd7976ffa02061509028f93b1996b63733174e
     stroke-dashoffset: 60;
     transition: all 0.3s linear;
   }
   
+<<<<<<< HEAD
   .cbx:checked + .check svg polyline {
+=======
+  #cbx:checked + .check svg polyline {
+>>>>>>> 80fd7976ffa02061509028f93b1996b63733174e
     stroke-dashoffset: 42;
     transition: all 0.2s linear;
     transition-delay: 0.15s;
   }
+<<<<<<< HEAD
 
   .grid-itens {
     display: grid;
@@ -476,6 +585,9 @@ table {
 
 
 
+=======
+  
+>>>>>>> 80fd7976ffa02061509028f93b1996b63733174e
 
 
 /* Produtos------------------------------------------------------------------------------------------------------ */
@@ -512,7 +624,6 @@ table {
     color: white;
     background-color: #407CD6;
     border-radius: 20px;
-    padding: 10px;
     font-weight: bolder;
 }
 
@@ -525,3 +636,13 @@ table {
     border: 3px dashed #407CD6;
 }
 
+<<<<<<< HEAD
+=======
+
+
+
+
+.requeijao-texto p, .leite-texto p, .minas-texto p, .margarina-texto p{
+    margin: 20px;
+}
+>>>>>>> 80fd7976ffa02061509028f93b1996b63733174e
