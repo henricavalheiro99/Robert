@@ -4,7 +4,6 @@
         display: block;
     }
 }
-
 /* carrinho------------------------------------------------------------------------------------------- */
 @media(max-width: 700px){
     #cupons-pagamento {
@@ -24,3 +23,61 @@
         
     }
 }
+
+/* Home---------------------------------------------------------------------------------------------- */
+
+@media(max-width: 1000px){
+    main {
+        min-height: auto;
+        width: 100%;
+    }
+
+    .banner {
+        height: auto;
+    }
+}
+
+@media(max-width:1000px){
+    .s1{
+        font-size: 20px;
+        margin-left: 70px;
+    }
+}
+@media(max-width:1000px){
+    .s2{
+        font-size: 20px;
+        margin-left: 70px;
+    }
+}
+@media(max-width:1000px){
+    .s3{
+        font-size: 20px;
+        margin-left: 70px;
+    }
+}
+@media(max-width: 350px){
+    .sobre div h4{
+    padding-bottom: 30px;
+    font-size: 2em;
+    }
+}
+
+
+@media(max-width:500px){
+    .formh{
+        --width-of-input: 100px;
+    }
+}
+@media(max-width:500px){
+    .sobre p{
+        font-size: small;
+    }
+}
+@media(max-width: 500px){
+    .footer .imgf .imgfoo{
+        height: 100px;
+        width: 100px;
+    }
+}
+
+

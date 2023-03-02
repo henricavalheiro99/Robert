@@ -8,7 +8,7 @@
 .header,
 .header2{
     background-color: #407CD6;
-    width: 100% 10vh;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -37,13 +37,13 @@
 .header a{
     margin-left: 5px;
 }
-.form button {
+.formh button {
   border: none;
   background: none;
   color: #8b8ba7;
 }
 
-.form {
+.formh {
   --timing: 0.3s;
   --width-of-input: 200px;
   --height-of-input: 40px;
@@ -74,7 +74,7 @@
   border: none;
 }
 
-.form:before {
+.formh:before {
   content: "";
   position: absolute;
   background: var(--border-color);
@@ -88,7 +88,7 @@
   transition: transform var(--timing) ease;
 }
 
-.form:focus-within {
+.formh:focus-within {
   border-radius: var(--after-border-radius);
 }
 
@@ -96,7 +96,7 @@ input:focus {
   outline: none;
 }
 
-.form:focus-within:before {
+.formh:focus-within:before {
   transform: scale(1);
 }
 
@@ -218,19 +218,25 @@ input:not(:placeholder-shown) ~ .reset {
     justify-content: center;
     flex-direction: column;
     text-align: center;
+    height: 30vh;
 }
-.footer img{
-    width: 20vw 20vh;
-    padding-left: 500px;
-    padding-right: 500px;
-    padding-top: 10px;
+.imgf{
 
+    display: flex;
+    align-items: center;
 
 }
+.imgf img{
+    width: 13%;
+    height: 20vh;
+}
+
 .footer p{
     padding: 10px;
 }
-    
+#mainh{
+    min-height:auto;
+}
 
 /* Carrinho------------------------------------------------------------------------------------------------ */
 
@@ -247,7 +253,7 @@ input:not(:placeholder-shown) ~ .reset {
 #background {
     background: rgb(255,255,255);
     background: linear-gradient(180deg, rgba(255,255,255,1) 66%, rgba(64,124,214,1) 100%);
-    min-height: 100vh;
+    /* min-height: 100vh; */
     width: 100%;
 }
 
