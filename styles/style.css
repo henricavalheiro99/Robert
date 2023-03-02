@@ -500,7 +500,11 @@ table {
     transform: rotate(45deg);
    }
 
-
+.Pix, .BB, .CD, .CC{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
 
 /*----------------------------------------------REGISTRO------------------------------------------------*/
 
