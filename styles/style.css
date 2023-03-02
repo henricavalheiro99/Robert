@@ -251,13 +251,13 @@ input:not(:placeholder-shown) ~ .reset {
     width: 100%;
 }
 
-main #cima {
+#cima {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-main #cima .apresenta{
+#cima .apresenta{
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -265,8 +265,7 @@ main #cima .apresenta{
     
 }
 
-
-main #cima .icon-carrinho {
+#cima .icon-carrinho {
     width: 100px;
     height: 100px;
     padding-left: 20px;
@@ -417,9 +416,7 @@ table {
 }
 
 
-
-
-  .grid-itens {
+.grid-itens {
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
@@ -446,6 +443,62 @@ table {
     cursor: pointer;
     margin-left: 100px;
 }
+
+.container1 input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+   }
+   
+   .container1 {
+    display: block;
+    position: relative;
+    cursor: pointer;
+    font-size: 20px;
+    user-select: none;
+   }
+   
+   /* Create a custom checkbox */
+   .checkmark {
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 1.3em;
+    width: 1.3em;
+    background: #606062;
+    border-radius: 7px;
+    box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.30), 0px 1px 1px rgba(0,5);
+   }
+   
+   /* When the checkbox is checked, add a blue background */
+   .container1 input:checked ~ .checkmark {
+    background-image: linear-gradient(#255CD2,#1D52C1)
+   }
+   
+   /* Create the checkmark/indicator (hidden when not checked) */
+   .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+   }
+   
+   /* Show the checkmark when checked */
+   .container1 input:checked ~ .checkmark:after {
+    display: block;
+   }
+   
+   /* Style the checkmark/indicator */
+   .container1 .checkmark:after {
+    left: 0.45em;
+    top: 0.20em;
+    width: 0.24em;
+    height: 0.6em;
+    border: solid white;
+    border-width: 0 0.15em 0.15em 0;
+    transform: rotate(45deg);
+   }
 
 
 
@@ -640,7 +693,7 @@ main #registro #registro-registrar .container{
     font-weight: bolder;
 }
 
-.requeijao-texto h3, .leite-texto h3, .minas-texto h3, .margarina-texto h3{
+.requeijao-texto h3, .leite-texto h3, .minas-texto h3, .margarina-texto h3, .preco h2{
     color: #407CD6;
     font-weight: bolder;
 }
@@ -649,12 +702,6 @@ main #registro #registro-registrar .container{
     border: 3px dashed #407CD6;
 }
 
-
-
-
-
-
 .requeijao-texto p, .leite-texto p, .minas-texto p, .margarina-texto p{
     margin: 20px;
 }
-
