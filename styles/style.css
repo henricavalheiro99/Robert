@@ -501,6 +501,8 @@ main #registro{
 main #registro #registro-registrar  form input{
     border: 1px solid black;
     border-radius: 20px;
+    padding: 0px 8px;
+    width: calc(100% - 16px);
 }
 
 main .form-formulario-nome,.form-formulario-email,
@@ -508,6 +510,10 @@ main .form-formulario-nome,.form-formulario-email,
     color: #407CD6;
     text-align: left;
     margin-top: 8px;
+}
+
+main .form-formulario-confirmar{
+    margin-bottom: 15px;
 }
 
 main #registro #registro-registrar form button{
@@ -528,7 +534,7 @@ main #registro #registro-registrar .container{
     margin-top: 10px;
 } 
 
-.check{
+.check {
     cursor: pointer;
     position: relative;
     margin: auto;
@@ -536,8 +542,9 @@ main #registro #registro-registrar .container{
     height: 18px;
     -webkit-tap-highlight-color: transparent;
     transform: translate3d(0, 0, 0);
+    font-size: 15px;
   }
-  
+
   .check:before {
     content: "";
     position: absolute;
@@ -581,29 +588,21 @@ main #registro #registro-registrar .container{
     stroke: #4285f4;
   }
   
-
-  .cbx:checked + .check svg {
-    stroke: #4285f4;
-  }
-  
-  .cbx:checked + .check svg path {
-
+  #cbx:checked + .check svg {
     stroke: #4285f4;
   }
   
   #cbx:checked + .check svg path {
-
     stroke-dashoffset: 60;
     transition: all 0.3s linear;
   }
   
-
-  .cbx:checked + .check svg polyline {
-
+  #cbx:checked + .check svg polyline {
     stroke-dashoffset: 42;
     transition: all 0.2s linear;
     transition-delay: 0.15s;
   }
+  
 /* Produtos------------------------------------------------------------------------------------------------------ */
 
 #Produtos .grid{
