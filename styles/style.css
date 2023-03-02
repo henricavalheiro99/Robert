@@ -8,7 +8,7 @@
 .header,
 .header2{
     background-color: #407CD6;
-    width: 100% 10vh;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -37,13 +37,13 @@
 .header a{
     margin-left: 5px;
 }
-.form button {
+.formh button {
   border: none;
   background: none;
   color: #8b8ba7;
 }
 
-.form {
+.formh {
   --timing: 0.3s;
   --width-of-input: 200px;
   --height-of-input: 40px;
@@ -74,7 +74,7 @@
   border: none;
 }
 
-.form:before {
+.formh:before {
   content: "";
   position: absolute;
   background: var(--border-color);
@@ -88,7 +88,7 @@
   transition: transform var(--timing) ease;
 }
 
-.form:focus-within {
+.formh:focus-within {
   border-radius: var(--after-border-radius);
 }
 
@@ -96,7 +96,7 @@ input:focus {
   outline: none;
 }
 
-.form:focus-within:before {
+.formh:focus-within:before {
   transform: scale(1);
 }
 
@@ -218,19 +218,25 @@ input:not(:placeholder-shown) ~ .reset {
     justify-content: center;
     flex-direction: column;
     text-align: center;
+    height: 30vh;
 }
-.footer img{
-    width: 20vw 20vh;
-    padding-left: 500px;
-    padding-right: 500px;
-    padding-top: 10px;
+.imgf{
 
+    display: flex;
+    align-items: center;
 
 }
+.imgf img{
+    width: 13%;
+    height: 20vh;
+}
+
 .footer p{
     padding: 10px;
 }
-    
+#mainh{
+    min-height:auto;
+}
 
 /* Carrinho------------------------------------------------------------------------------------------------ */
 
@@ -247,7 +253,7 @@ input:not(:placeholder-shown) ~ .reset {
 #background {
     background: rgb(255,255,255);
     background: linear-gradient(180deg, rgba(255,255,255,1) 66%, rgba(64,124,214,1) 100%);
-    min-height: 100vh;
+    /* min-height: 100vh; */
     width: 100%;
 }
 
@@ -520,7 +526,7 @@ main #registro{
 main #registre-se h1{
     text-align: center;
     color: #407CD6;
-    font-size: 22px;
+    font-size: 25px;
 }
 
 main #registro-registrar{
@@ -558,6 +564,8 @@ main #registro{
 main #registro #registro-registrar  form input{
     border: 1px solid black;
     border-radius: 20px;
+    padding: 0px 8px;
+    width: calc(100% - 16px);
 }
 
 main .form-formulario-nome,.form-formulario-email,
@@ -565,6 +573,10 @@ main .form-formulario-nome,.form-formulario-email,
     color: #407CD6;
     text-align: left;
     margin-top: 8px;
+}
+
+main .form-formulario-confirmar{
+    margin-bottom: 15px;
 }
 
 main #registro #registro-registrar form button{
@@ -585,7 +597,7 @@ main #registro #registro-registrar .container{
     margin-top: 10px;
 } 
 
-.check{
+.check {
     cursor: pointer;
     position: relative;
     margin: auto;
@@ -593,8 +605,9 @@ main #registro #registro-registrar .container{
     height: 18px;
     -webkit-tap-highlight-color: transparent;
     transform: translate3d(0, 0, 0);
+    font-size: 15px;
   }
-  
+
   .check:before {
     content: "";
     position: absolute;
@@ -638,29 +651,21 @@ main #registro #registro-registrar .container{
     stroke: #4285f4;
   }
   
-
-  .cbx:checked + .check svg {
-    stroke: #4285f4;
-  }
-  
-  .cbx:checked + .check svg path {
-
+  #cbx:checked + .check svg {
     stroke: #4285f4;
   }
   
   #cbx:checked + .check svg path {
-
     stroke-dashoffset: 60;
     transition: all 0.3s linear;
   }
   
-
-  .cbx:checked + .check svg polyline {
-
+  #cbx:checked + .check svg polyline {
     stroke-dashoffset: 42;
     transition: all 0.2s linear;
     transition-delay: 0.15s;
   }
+  
 /* Produtos------------------------------------------------------------------------------------------------------ */
 
 #Produtos .grid{
