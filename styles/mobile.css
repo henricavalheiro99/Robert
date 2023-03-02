@@ -20,7 +20,7 @@
 
     #tabela {
         overflow: auto;
-        
+        padding-left: 20px;
     }
 }
 
