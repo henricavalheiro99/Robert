@@ -641,7 +641,7 @@ main #registro #registro-registrar .container{
     font-weight: bolder;
 }
 
-.requeijao-texto h3, .leite-texto h3, .minas-texto h3, .margarina-texto h3{
+.requeijao-texto h3, .leite-texto h3, .minas-texto h3, .margarina-texto h3, .preco h2{
     color: #407CD6;
     font-weight: bolder;
 }
@@ -650,12 +650,6 @@ main #registro #registro-registrar .container{
     border: 3px dashed #407CD6;
 }
 
-
-
-
-
-
 .requeijao-texto p, .leite-texto p, .minas-texto p, .margarina-texto p{
     margin: 20px;
 }
-
